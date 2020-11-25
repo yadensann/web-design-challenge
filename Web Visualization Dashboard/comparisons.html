@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap Visualization Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+
+    <body>
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Plots
+                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+                        <a class="dropdown-item" href="wind_speed.html">Wind Speeds</a>
+                    </div>
+                    <li class= "nav-item">
+                        <a class= "nav-link" href="comparisons.html">Comparison
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+            </li>
+        </ul>
+        <div class= "container">
+            <div class='row'>
+                <div class='box'></div>
+            </div>
+            <h3 class="title">Comparisons of Latitude and Variables</h3>
+            <hr>
+            <p>
+                Each image will direct you to a more detailed analysis.
+            </p>
+
+            <!-- References for fancybox-->
+            <link rel="stylesheet" href="//frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
+            <script src="//frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
+
+            <div class="container" style="padding-bottom: 40px;">
+                <div class="row">
+                    <div class='col-lg-6'>
+                        <a class="fancybox thumbnail" rel="ligthbox" href="max_temp.html">
+                            <img class="img-responsive" alt="Maximim Temp. Graph" padding= 20px src="/Users/yaden/Desktop/web-design-challenge/Resources/Assets/Images/Fig1.png" width="100%" />
+                        </a>
+                    </div> 
+                    <div class='col-lg-6'>
+                        <a class="fancybox thumbnail" rel="ligthbox" href="humidity.html">
+                            <img class="img-responsive" alt="" src="/Users/yaden/Desktop/web-design-challenge/Resources/Assets/Images/Fig2.png" width="100%" />
+                        </a>
+                    </div> 
+                    <div class='col-lg-6'>
+                        <a class="fancybox thumbnail" rel="ligthbox" href="cloudiness.html">
+                            <img class="img-responsive" alt="" src="/Users/yaden/Desktop/web-design-challenge/Resources/Assets/Images/Fig3.png" width="100%" />
+                        </a>
+                    </div> 
+                    <div class='col-lg-6'>
+                        <a class="fancybox thumbnail" rel="ligthbox" href="wind_speed.html">
+                            <img class="img-responsive" alt="" src="/Users/yaden/Desktop/web-design-challenge/Resources/Assets/Images/Fig4.png" width="100%" />
+                        </a>
+                    </div>  
+                </div>  
+            </div>
+        </div>
+
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+
+ 
+    </body>
+</html>
