@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap Visualization Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+
+    <body>
+        <div class="navigation">
+            <a class="navbar-brand" style="background-color:beige;" href="landing.html">Latitude
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Plots
+                    </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speeds</a>
+                         </div>
+                         <li class= "nav-item">
+                            <a class= "nav-link" href="comparisons.html">Comparison
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                </li>
+            </ul>
+        </div>
+        <!-- Content -->
+        <div class= "container">
+            <div class= "row">
+                <div class="col-lg-7 col-md-12">
+                </div>
+                <div class='box'>
+                    <h3 class="title">Summary - Latitude vs. Variables</h3>
+                    <hr>
+                    <img src="Resources/Assets/Images/worldmap.png" style= "width: 700px" class="vizualization rounded float-left" alt="">
+                        <p> 
+                            We are reintroducing weather data from past assignments to analyze how the weather changes the closer you get to the equator.
+                            We used data from OpenWeatherMap API to configure our own datasets on over 500 cities.
+                        </p>
+                        <p>
+                            After assembling our data, Matplotlib was used to create visual plots to explain our data further. Temperature, cloudiness,
+                            wind speed, and humidity were all aspects that were researched. This webpage was made to better organize the data to effeciently
+                            showcase our datasets and graphs.
+                        </p>
+                </div>
+                
+            <div class="sidebar">
+                <u><a href= "max_temp.html">Max Temp</a></u>
+                    <img class='img-thumbnail' src="Resources/Assets/Images/Fig1.png">
+                <u><a href="cloudiness.html">Cloudiness</a></u>
+                    <img class = 'img-thumbnail' src='Resources/Assets/Images/Fig3.png'>
+                <u><a href= 'wind_speed.html'>Wind Speed</a></u>
+                    <img class='img-thumbnail' src= 'Resources/Assets/Images/Fig4.png'>
+                <u><a href= 'humidity.html'>Humidity</a></u>
+                    <img class= 'img-thumbnail' src='Resources/Assets/Images/Fig2.png'>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+
+    </body>
+</html>
