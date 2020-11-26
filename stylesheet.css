@@ -1,6 +1,6 @@
 /* Body */
 body{
-    background-color: beige;
+    background-color: rgb(250, 250, 245);
 }
 
 /*  Navbar  */
@@ -17,25 +17,38 @@ body{
     border-width: medium;
 }
 
-.nav-link{
+.nav-link {
+  display: block;
+  padding: 0rem 0.5rem;
+  color:rgb(24, 24, 24);
+}
+
+
+.nav-link:link {
+  color: rgb(24, 24, 24);
+}
+
+.nav-link:active{
     color: rgb(41, 39, 29); 
     font-weight: bold; 
     font-family: 'Arial', regular;
     font-size: large;
-
+    background-color: #171e25 !important;
 }
 
-/* a:hover{
-    color: rgb(92, 82, 82) 
-} */
 
+.nav-link:hover{
+  background-color:#5f8d7e !important;
+  color:rgb(41, 39, 29)
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #89c58ed5;
+}
 
 .dropdown-menu{
     background-color:rgb(196, 190, 179) !important;
-}
-
-.nav-link:hover{
-    background-color:#E7E7E7 !important;
+    border-radius: 5px;
 }
 
 .box {
@@ -50,16 +63,15 @@ body{
   height: 400px;
 }
 
-
 /* The side navigation menu */
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #bec7b7;
   position: fixed;
   height: 100%;
-  overflow: auto;
+  overflow: fixed;
 }
 
 /* Sidebar links */
@@ -77,11 +89,7 @@ body{
   height: 100%;
 }
 
-@media (max-width: 550px) {
-    .navbar-expand-lg navbar-light bg-light {
-      padding: 10px;
-    }
-  
+@media (max-width: 1000px) {
     .box {
       margin-right: 30px;
       margin-left: 30px;
@@ -93,8 +101,19 @@ body{
   
     #navbarSupportedContent {
       visibility: visible;
+
     }
+    
+    .sidebar{
+      visibility: hidden;
+
+    }
+
+    body{
+      position: fixed;
+      font-size:large;
+      word-wrap: normal;
+
+    }
+  
   }
-
-
-

@@ -15,62 +15,68 @@
     <body>
         <ul class="nav nav-pills">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Plots
+                <div class="navigation">
+                <a class="navbar-brand" style="background-color:beige;" href="landing.html">Latitude
                 </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="index.html">Home</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
-                        <a class="dropdown-item" href="wind_speed.html">Wind Speeds</a>
+                <br>
+                <br>
+                <ul class="nav nav-pills">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Plots
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="landing.html">Home</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speeds</a>
+                        </div>
+                        <li class= "nav-item">
+                            <a class= "nav-link" href="comparisons.html">Comparison
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </li>
+                </ul>
+                <div class= "container">
+                    <div class='box'></div>
+                    <h3 class="title">Comparisons of Latitude and Variables</h3>
+                    <hr>
+                    <p>
+                        Each image will direct you to a more detailed analysis.
+                    </p>
+
+                    <!-- References for fancybox-->
+                    <link rel="stylesheet" href="//frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
+                    <script src="//frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
+
+                    <div class="container" style="padding-bottom: 40px;">
+                        <div class="row">
+                            <div class='col-lg-6'>
+                                <a class="fancybox thumbnail" rel="ligthbox" href="max_temp.html">
+                                    <img class="img-responsive" alt="Maximim Temp. Graph" padding= 20px src="Resources/Assets/Images/Fig1.png" width="100%" />
+                                </a>
+                            </div> 
+                            <div class='col-lg-6'>
+                                <a class="fancybox thumbnail" rel="ligthbox" href="humidity.html">
+                                    <img class="img-responsive" alt="" src="Resources/Assets/Images/Fig2.png" width="100%" />
+                                </a>
+                            </div> 
+                            <div class='col-lg-6'>
+                                <a class="fancybox thumbnail" rel="ligthbox" href="cloudiness.html">
+                                    <img class="img-responsive" alt="" src="Resources/Assets/Images/Fig3.png" width="100%" />
+                                </a>
+                            </div> 
+                            <div class='col-lg-6'>
+                                <a class="fancybox thumbnail" rel="ligthbox" href="wind_speed.html">
+                                    <img class="img-responsive" alt="" src="Resources/Assets/Images/Fig4.png" width="100%" />
+                                </a>
+                            </div>  
+                        </div>  
                     </div>
-                    <li class= "nav-item">
-                        <a class= "nav-link" href="comparisons.html">Comparison
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
-                    </li>
-            </li>
-        </ul>
-        <div class= "container">
-            <div class='row'>
-                <div class='box'></div>
-            </div>
-            <h3 class="title">Comparisons of Latitude and Variables</h3>
-            <hr>
-            <p>
-                Each image will direct you to a more detailed analysis.
-            </p>
-
-            <!-- References for fancybox-->
-            <link rel="stylesheet" href="//frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
-            <script src="//frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
-
-            <div class="container" style="padding-bottom: 40px;">
-                <div class="row">
-                    <div class='col-lg-6'>
-                        <a class="fancybox thumbnail" rel="ligthbox" href="max_temp.html">
-                            <img class="img-responsive" alt="Maximim Temp. Graph" padding= 20px src="Resources/Assets/Images/Fig1.png" width="100%" />
-                        </a>
-                    </div> 
-                    <div class='col-lg-6'>
-                        <a class="fancybox thumbnail" rel="ligthbox" href="humidity.html">
-                            <img class="img-responsive" alt="" src="Resources/Assets/Images/Fig2.png" width="100%" />
-                        </a>
-                    </div> 
-                    <div class='col-lg-6'>
-                        <a class="fancybox thumbnail" rel="ligthbox" href="cloudiness.html">
-                            <img class="img-responsive" alt="" src="Resources/Assets/Images/Fig3.png" width="100%" />
-                        </a>
-                    </div> 
-                    <div class='col-lg-6'>
-                        <a class="fancybox thumbnail" rel="ligthbox" href="wind_speed.html">
-                            <img class="img-responsive" alt="" src="Resources/Assets/Images/Fig4.png" width="100%" />
-                        </a>
-                    </div>  
-                </div>  
-            </div>
+                </div>
         </div>
 
 
